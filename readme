@@ -1,0 +1,3 @@
+<.bashrc>
+alias R='docker run -it --name="myR" -e DISPLAY=$DISPLAY -u docker -w /workdir -v $PWD:/workdir -v /tmp/.X11-unix:/tmp/.X11-unix:ro r-base:hiroshi R'
+alias quitR='docker rm -f myR'
